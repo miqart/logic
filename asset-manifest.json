@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/logic/static/css/main.e8d1897d.css",
+    "main.js": "/logic/static/js/main.c9d01421.js",
+    "static/media/Nunito-ExtraBold.ttf": "/logic/static/media/Nunito-ExtraBold.7415babff1752bd4ea44.ttf",
+    "index.html": "/logic/index.html",
+    "main.e8d1897d.css.map": "/logic/static/css/main.e8d1897d.css.map",
+    "main.c9d01421.js.map": "/logic/static/js/main.c9d01421.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8d1897d.css",
+    "static/js/main.c9d01421.js"
+  ]
+}
