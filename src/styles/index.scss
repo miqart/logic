@@ -1,0 +1,36 @@
+// Global styles
+@import './fonts';
+@import './colors';
+
+html, body, #root, .app {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Nunito-ExtraBold', sans-serif;
+}
+
+/* Main scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust as needed */
+}
+
+/* Draggable scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: $primary-color; /* Adjust color as needed */
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: $border-color; /* Adjust color as needed */
+  border-radius: 5px;
+}

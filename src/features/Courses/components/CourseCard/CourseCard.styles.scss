@@ -1,0 +1,36 @@
+@import '../../../../styles/colors';
+
+$card-height-desktop: 210px;
+$card-height-tablet: 228px;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: $card-height-desktop;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 13px -4px $shadow-color;
+  transition: transform 0.3s ease;
+  transform-origin: top;
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 0.1s ease;
+  }
+  .pictureWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 162px;
+    .picture {
+      width: 144px;
+      height: 144px;
+    }
+  }
+  .titleWrapper {
+    padding: 12px 18px 18px;
+    background-color: $white;
+    .title {
+      color: $text-color;
+    }
+  }
+}

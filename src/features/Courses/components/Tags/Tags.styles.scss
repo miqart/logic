@@ -1,0 +1,52 @@
+@import '../../../../styles/colors';
+
+$button-height: 42px;
+$button-height: 42px;
+$button-radius: 12px;
+$container-padding: 12px; // Note: 11px in design, but 12px is better
+
+.tags {
+  width: 264px;
+  padding: $container-padding;
+  margin: 12px;
+  border: 1px solid $border-color;
+  border-radius: 18px;
+  position: relative;
+  .activeBtnOverlay {
+    height: $button-height;
+    width: calc(100% - 2 * $container-padding);
+    background-color: $primary-color;
+    position: absolute;
+    left: $container-padding;
+    border-radius: $button-radius;
+    transition: top .3s cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  .tagBtn {
+    font-family: 'Nunito-ExtraBold', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    width: 100%;
+    height: $button-height;
+    padding: 12px;
+    border: none;
+    border-radius: $button-radius;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    transition: color .3s ease-in;
+    &:disabled {
+      cursor: default;
+    }
+    &:not(.active) {
+      color: $text-color;
+    }
+    &.active {
+      color: $white
+    }
+  }
+}
+
+:export {
+  buttonHeight: $button-height;
+  containerPadding: $container-padding;
+}
